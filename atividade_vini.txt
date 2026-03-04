@@ -1,0 +1,35 @@
+Questão 1
+
+O HeapSort tem complexidade O(n log n) garantida em todos os casos porque usa a estrutura de heap, que é uma árvore binária completa. Construir o heap leva tempo O(n) e cada remoção do maior elemento (raiz) custa O(log n). Como removemos n vezes, o custo total é O(n log n), independente da situação inicial.
+
+Já o ShellSort não tem complexidade previsível porque depende muito da sequência de gaps que escolhemos para fazer as comparações. Dependendo desses valores, o desempenho pode variar bastante, desde perto de O(n log n) até O(n²), sem uma garantia fixa.
+
+Questão 2
+
+O vetor dado é [30, 12, 45, 6, 18, 3].
+
+a) O Max-Heap correspondente é formado reorganizando os números para que cada pai seja maior que os filhos, ficando assim: [45, 18, 30, 6, 12, 3].
+
+b) Quando extraímos a raiz (que é o maior, 45), trocamos ela com o último elemento do heap (3) e depois reorganizamos. O vetor fica então [30, 18, 3, 6, 12].
+
+Questão 3
+
+Analisando as afirmativas:
+
+I – ShellSort é estável? Não, ele não garante que elementos iguais vão manter a ordem original.
+
+II – HeapSort usa uma árvore binária completa? Sim, isso é verdade.
+
+III – HeapSort depende da sequência de gaps? Não, essa dependência é do ShellSort.
+
+IV – ShellSort é uma melhoria do Insertion Sort? Sim, ele melhora o Insertion Sort usando comparações em gaps maiores.
+
+Então, a alternativa correta é a A) Apenas II e IV.
+
+Questão 4
+
+Em um sistema que processa milhões de registros por dia, o HeapSort é mais indicado porque tem complexidade garantida e previsível O(n log n), o que é importante para manter o desempenho estável mesmo com muitos dados. O ShellSort pode ser rápido em alguns casos, mas sem garantia de desempenho no pior caso, o que pode ser problemático.
+
+Questão 5
+
+A estrutura Heap é muito usada em algoritmos de grafos, principalmente como fila de prioridade. Por exemplo, no algoritmo de Dijkstra, a Heap ajuda a escolher rapidamente o próximo vértice com menor distância, tornando o algoritmo mais eficiente.
